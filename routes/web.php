@@ -30,6 +30,9 @@ Route::Post('/login', [UserController::class, 'login']);
 
 Route::Post('/register', [UserController::class, 'create']);
 
+Route::get('/home', function () {
+    return view('home');
+});
 
 
 
